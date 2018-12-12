@@ -23,8 +23,6 @@ public class OI {
   public OI() {
     gamepad = new Joystick(0);
     //TODO remap joystick buttons
-    goUp = new JoystickButton(gamepad, 0);
-    goDown = new JoystickButton(gamepad, 1);
   }
 
 }

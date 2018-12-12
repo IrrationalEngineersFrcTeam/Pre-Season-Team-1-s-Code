@@ -1,6 +1,7 @@
 package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
+import frc.robot.Robot;
 
 public class RotationSub extends Subsystem{
 
@@ -9,12 +10,8 @@ public class RotationSub extends Subsystem{
 
     }
 
-    void turnUp() {
-        
+    public void rotate() {
+    //TODO make sure gamepad is pulling from correct input
+    Robot.robotmap.rotMotor.set(Robot.oi.gamepad.getRawAxis(1));
     }
-
-    void turnDown() {
-
-    }
-
 }

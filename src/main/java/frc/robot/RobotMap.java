@@ -18,7 +18,7 @@ import edu.wpi.first.wpilibj.Spark;
 public class RobotMap {
   public static int rotMotorPort = 1;
 
-  public static Spark rotMotor;
+  public Spark rotMotor;
   public RobotMap() {
     rotMotor = new Spark(rotMotorPort);
   }
